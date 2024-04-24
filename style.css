@@ -72,6 +72,17 @@ body {
     color: rgba(0, 0, 0, 0);
 }
 
+#stopka {
+    float: left;
+    width: 70%;
+    padding: 50px;
+    text-align: center;
+    font-size:x-large;
+    font-family: Montserrat;
+    background-color: #D2CDC8;
+    margin-left: 15%;
+}
+
 /* .tlo {
     display: none;
     position: fixed;
@@ -208,3 +219,29 @@ body {
         min-height: calc(100% - 1rem);
     }
 }
+
+.collapsible {
+    background-color: #F16F36;
+    color: #FFFFD8;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: center;
+    outline: none;
+    font-size: x-large;
+  }
+  
+
+  .active, .collapsible:hover {
+    background-color: #C1592B;
+  }
+  
+
+  .zrodla {
+    padding: 0 18px;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+  }
