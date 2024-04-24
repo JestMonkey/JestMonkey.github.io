@@ -47,3 +47,17 @@ const galleryImgs = document.querySelector(".ikony").querySelectorAll(".icon");
 //     tlo1.style.display = "none";
 // } // Że jak kliknie X to tekst + obraz znikną
 
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var zrodla = this.nextElementSibling;
+    if (zrodla.style.maxHeight){
+      zrodla.style.maxHeight = null;
+    } else {
+      zrodla.style.maxHeight = zrodla.scrollHeight + "px";
+    }
+  });
+}
